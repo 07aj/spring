@@ -1,8 +1,6 @@
 package com.example.spring.controller;
 
-import com.example.spring.model.Note;
 import com.example.spring.model.User;
-import com.example.spring.repository.NoteRepository;
 import com.example.spring.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;

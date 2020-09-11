@@ -1,5 +1,6 @@
 package com.example.spring.model;
 
+import com.example.spring.converter.StringEncryptDecryptConverter;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -26,6 +27,7 @@ public class Note {
     private String userId;
 
     @NotBlank
+    @Convert(converter = StringEncryptDecryptConverter.class)
     private String content;
 
     @Column(nullable = false, updatable = false)
